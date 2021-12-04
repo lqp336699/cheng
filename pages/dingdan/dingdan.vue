@@ -169,7 +169,7 @@
 						</view>
 					</view>
 					
-					
+					<!-- 记重确认 -->
 					<view class="flex  justify-between align-center" style="padding:0 140px 0 10px;">
 						
 						<view class="ileft " >
@@ -187,7 +187,7 @@
 							<view class=" flex flex-column align-center  mt-10 justify-center">
 								<button class="text-white"  style="width:580px; height:85px; font-size:46px; background-color: #31c3a6; line-height:85px; border-radius: 70px;">确定</button>
 								<view class="text-center">
-									<text style="font-size:26px; color:#31c3a6">没有找到,手动检索</text>
+									<text style="font-size:26px; color:#31c3a6" @click="gosearch">没有找到,手动检索</text>
 								</view>
 							</view>
 						</view>
@@ -631,6 +631,11 @@
 			},
 			logout(){
 				 this.$refs.popup.open('center')
+			},
+			gosearch(){
+				uni.navigateTo({
+					url:'../search/search'
+				})
 			}
 		}
 	}
