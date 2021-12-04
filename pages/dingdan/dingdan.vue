@@ -20,13 +20,13 @@
 		</uni-popup>
 		
 		<!-- 页面主体 -->
-		<view class="main relative">
+		<view class="main  relative">
 			<!-- 退出登录按钮 -->
 			<view class="absolute" style="top:25px; right:22px; " @click="logout">
 				<text class="iconfont" style="font-size:30px; color:red;">&#xe81a;</text>
 			</view>
 			<!-- 菜单 -->
-			<view class="flex bd list">
+			<view class="flex  list">
 				<view :class="dingdansence ? 'active': ''" @click="dingdan"><text>订单列表</text></view>
 				<view :class="dingdansence ? '': 'active'" @click="yanshou"><text>确认验收</text></view>
 			</view>
@@ -105,7 +105,7 @@
 								
 							    <uni-grid-item class="" v-for="i in 3">
 									
-									<view class="relative bd" style="overflow: hidden; padding:10px 0 23px 0; margin:0 8px;  border:1px solid #ccc;  border-radius:9px;">
+									<view class="relative" style="overflow: hidden; padding:10px 0 23px 0; margin:0 8px;  border:1px solid #ccc;  border-radius:9px;">
 										<view class="flex justify-center flex-column" style=" ">
 											<view class="flex  justify-center" style="height:190px;">
 												<image style="display:block; width:182px; height:155px;" src="../../static/app1.jpg" mode=""></image>
@@ -167,6 +167,32 @@
 								<text style="font-size:22px; color:#888;">/500g</text>
 							</view>
 						</view>
+					</view>
+					
+					
+					<view class="flex  justify-between align-center" style="padding:0 140px 0 10px;">
+						
+						<view class="ileft " >
+							<view class=" flex justify-between tit" style="font-size:25px;width:590px; padding:16px 0; color:#888; ">
+								<text>记重</text>
+								<text style="color:#444;">11.526kg</text>
+							</view>
+							<view class=" flex justify-between tit" style="font-size:25px;width:590px; padding:16px 0; color:#888;">
+								<text>合计</text>
+								<text style="color:red; font-weight: 600;font-size:28px">￥255.86</text>
+							</view>
+						</view>
+						
+						<view class="iright mt-30">
+							<view class=" flex flex-column align-center  mt-10 justify-center">
+								<button class="text-white"  style="width:580px; height:85px; font-size:46px; background-color: #31c3a6; line-height:85px; border-radius: 70px;">确定</button>
+								<view class="text-center">
+									<text style="font-size:26px; color:#31c3a6">没有找到,手动检索</text>
+								</view>
+							</view>
+						</view>
+						
+						
 					</view>
 				</view>
 			</view>
@@ -613,10 +639,11 @@
 <style>
 .main{
 	width:1366px;
-	height:768px;
+	/* height:768px; */
 	padding-left:56px;
 	padding-top:17px;
-	border:1px solid #000;
+	padding-bottom:40px;
+	background-color: rgb(245,245,245);
 }
 .list{
 	border-radius:8px;
@@ -629,6 +656,9 @@
 	text-align: center;
 	line-height:44px;
 	color:#1eb698;
+}
+.dingdan{
+	background-color: rgb(245,245,245);
 }
 .list .active{
 	background-color: #1eb698; 
@@ -690,5 +720,8 @@
 	background-color: #fff;
 	border:1px solid #01CBA3;
 	font-size:15px;
+}
+.tit{
+	border-bottom:1px solid #666;
 }
 </style>
