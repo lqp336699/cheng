@@ -1,7 +1,7 @@
 <template>
 	<view class="box flex justify-center align-center" style="height:100vh">
 		<!-- 退出登录弹出框 -->
-		<uni-popup ref="popup" type="center">
+		<uni-popup ref="popup " type="center">
 			<view class="bg-white" style="width:430px; height:280px; ">
 				<view class="flex align-center" style="font-size:20px; font-weight:600; background-color: #f0f0f0; color:#01cba3; height:55px; padding:0 10px;">
 					<text class="iconfont" style="margin-right:6px; font-size:25px;">&#xe661;</text>
@@ -727,6 +727,5 @@
 	font-size:15px;
 }
 .tit{
-	border-bottom:1px solid #666;
 }
 </style>

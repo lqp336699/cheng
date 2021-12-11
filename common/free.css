@@ -4,6 +4,8 @@ input{margin: 0; padding: 0;}
 .bdc{border:1px solid #ccc;}
 .flex{display:flex;}
 .flex-1{flex:1;}
+.py-20{padding:20px 0;}
+.flex-start{justify-content: flex-start;}
 .flex-column{flex-direction: column;}
 .flex-row{flex-direction: row;}
 .flex-wrap{flex-wrap:wrap;}

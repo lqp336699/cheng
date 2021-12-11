@@ -10,7 +10,7 @@
 			
 			<!-- 弹出框 -->
 			
-			<uni-popup ref="popup" type="center" background-color="#fff" >
+			<uni-popup ref="popup" class="bd" type="center" background-color="#fff" >
 				
 				<!-- 输入管理员密码弹出框 -->
 				
